@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("before_log_in_header.html");
+    });
+    </script>
+  </head>
+  <body bgcolor="#677077">
+    <div id="header"></div>
+    <div class="jumbotron center-vertical">
+      <div class='container text-center'>
+        <h3>Log In</h3>
+        <div class='form_wrapper'>
+          <form action='../PHP/log_in.php' method='post'>
+            <div class='row'>
+            </div>
+            <div class='row'>
+              <div class='field-container'>
+                <input name='email' placeholder='Your email' required type='email'>
+              </div>
+              <div class='field-container'>
+                <input name='password' placeholder='Your password' required type='password'>
+              </div>
+              <div class='field-container'>
+                <button class='margin-10' type='submit'>Log In</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

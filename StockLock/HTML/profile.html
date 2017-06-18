@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JavaScript/profile_page.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+    });
+    </script>
+  </head>
+  <body bgcolor="#677077">
+    <div id="loading"></div>
+    <div id="header"></div>
+    <div class="jumbotron vertical-center">
+      <h2 id="name"></h2>
+      <h3 id="email"></h3>
+      <h4 id="moneyInStockLock"></h4>
+      <h4>Bank Account Info:</h4>
+      <h5 id="bankName"></h5>
+      <h5 id="bankAccount"></h5>
+      <input id="moreMoney" type="button" value="Transfer from Bank Account into Stock Lock">
+      <input id="transferMoneyBack" type="button" value="Transfer from Stock Lock into Bank Account">
+    </div>
+  </body>
+</html>

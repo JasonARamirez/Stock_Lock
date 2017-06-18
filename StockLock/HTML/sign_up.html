@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("before_log_in_header.html");
+    });
+    </script>
+    <style>
+      form {
+        display: inline-block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body bgcolor="#677077">
+    <div id="header"></div>
+    <div class="jumbotron vertical-center">
+      <h3 class='text-center'>Sign Up</h3>
+      <div class='container text-center'>
+        <div class='form_wrapper'>
+          <form action='../PHP/sign_up.php' method='post'>
+            <div class='row'>
+            </div>
+            <div class='row'>
+              <div class='field-container'>
+                <input name='first_name' placeholder='First name' required type='text'>
+              </div>
+              <div class='field-container'>
+                <input name='last_name' placeholder='Last name' required type='text'>
+              </div>
+              <div class='field-container'>
+                <input name='email' placeholder='Your email' required type='email'>
+              </div>
+              <div class='field-container'>
+                <input name='password' placeholder='Set a password' required type='password'>
+              </div>
+              <div class='field-container'>
+                <input name='confirm_password' placeholder='Confirm password' required type='password'>
+              </div>
+              <div class='field-container'>
+                <input name='bank_routing' placeholder='Bank Routing #' required type='text'>
+              </div>
+              <div class='field-container'>
+                <input name='bank_account' placeholder='Bank Account #' required type='text'>
+              </div>
+              <div class='field-container'>
+                <button class='margin-10' type='submit'>Create account</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

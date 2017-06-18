@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JavaScript/Classes/chart_input.js"></script>
+    <script src="../JavaScript/Classes/interactive_chart_data_input.js"></script>
+    <script src="../JavaScript/data_to_chart.js"></script>
+    <script src="../JavaScript/buy_sell.js"></script>
+    <script src="../JavaScript/search_company_page.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+    });
+    </script>
+  </head>
+  <body bgcolor="#677077">
+    <div id="loading"></div>
+    <div id="header"></div>
+    <div class="jumbotron vertical-center">
+      <p align="center">
+        <input id="getCompanyName" type="text">
+        <input id="searchBtn" type="button" value="Search Company">
+      </p>
+      <div id="parent" class="container"></div>
+    </div>
+  </body>
+</html>
